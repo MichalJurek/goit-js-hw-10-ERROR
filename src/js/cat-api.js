@@ -2,7 +2,7 @@ const urlBreed = 'https://api.thecatapi.com/v1/breeds';
 const urlImg = 'https://api.thecatapi.com/v1/images';
 
 const API =
-  'live_hf51EBV20gyEt13QUmfXN5p0tLMiqnO8q5y6PlezBPFYjeecZ8FLGobYMwGYYloV';
+  'live_DUHL6U0C4HqaBKbTDszDIoy2BK3XmJTVQkl8CvbUWYbCzeT9mTVRShpfmo7XN42H';
 
 const fetchBreeds = () => {
   return fetch(`${urlBreed}?api_key=${API}`).then(response => {
