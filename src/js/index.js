@@ -1,5 +1,5 @@
-import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 import Notiflix from 'notiflix';
+import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
 
@@ -19,7 +19,12 @@ function fetchAndRenderBreeds() {
     .catch(error => {
       console.log(error);
       Notiflix.Notify.failure(
-        'Oops! Something went wrong! Try reloading the page!'
+        'Oops! Something went wrong! Try reloading the page!',
+        {
+          position: 'center-top',
+          distance: '20px',
+          background: '#FF3D00',
+        }
       );
     })
     .finally(() => {
